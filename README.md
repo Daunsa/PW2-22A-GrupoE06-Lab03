@@ -73,16 +73,14 @@
 </table>
 </div>
 
-<div align="center">
-<table>
-<theader>
-<tr><th colspan="6">SOLUCIÓN Y RESULTADOS</th></tr>
-</theader>
-<tbody>
-
-<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS:<br>
 
 
+
+
+<div align="center"><h2> SOLUCIÓN Y RESULTADOS </h2></div>
+
+### I.	SOLUCIÓN DE EJERCICIOS/PROBLEMAS
+#	
 -   En grupos de 3 a 5 personas implemente una aplicación web que navegue sobre archivos Markdown y permita:
     1. Listas los archivos Markdown disponibles
     2. Ver el contenido de un archivo Markdown traducido a HTML
@@ -94,47 +92,26 @@ El servidor debe usar NodeJS
 Su aplicación debe ser de página única, es decir que sólo habrá un archivo index.html y nada más.
 
 -   Si los enlaces proporcionado en esta guía no le son suficientes, puede revisar códigos en Internet que le ayuden con cosas como ejemplos: listar un directorio en NodeJS; pero deberá incluir los enlaces correspondientes en sus archivos como comentarios y sólo podrá usar código de stackoverflow, incluir código de cualquier otra fuente está prohibido y se considerará actitud deshonesta.
+#
 
+### II.	SOLUCIÓN DEL CUESTIONARIO
+#
+- En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?
+#
+- En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?
+#
+- ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
+#
+- Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?
+#
+### III.	CONCLUSIONES
+#
+<div align="center"><h2>  RETROALIMENTACIÓN GENERAL </h2></div> <br>
 
+<div align="center"><h2> REFERENCIAS Y BIBLIOGRAFÍAL </h2></div> <br>
 
-<tr><td>II. SOLUCIÓN DEL CUESTINARIO<br>
-<h4>1. En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."?</h4><br>
-<h4>2. En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt? </h4><br>
-<h4>3. ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil? </h4><br>
-<h4>4. Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente? </h4><br>
-
-<br><br></td></tr>
-<br><br></td></tr>
-<tr><td>III. CONCLUSIONES<br>
-
-<br>  
-<br><br></td></tr>
-</tbody>
-</table>
-</div>
-
-<div align="center">
-<table>
-<theader>
-<tr><th colspan="6">RETROALIMENTACIÓN GENERAL</th></tr>
-</theader>
-<tbody>
-	<td>
-    - Retroalimentacion del docente
-	</td>
-</tbody>
-</table>
-</div>
-
-<div align="center">
-<table>
-<theader>
-<tr><th colspan="6">REFERENCIAS Y BIBLIOGRAFÍA</th></tr>
-</theader>
-<tbody>
-	<td>
-    - Colocar referencias
-	</td>
-</tbody>
-</table>
-</div>
+-   https://www.w3schools.com/nodejs/nodejs_intro.asp
+-   https://nodejs.org/en/docs/guides/getting-started-guide/
+-   https://nodejs.dev/learn
+-   https://www.w3schools.com/js/js_api_fetch.asp
+	
