@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="/nuevo" method="post">
+            Nombre<input type="text" id="nombre"><br>
+            Texto<textarea id="texto"></textarea><br>
+            <input type="button" value="registrar" id="registrar">
+        </form>
+    </div>
+    <script>
+        const boton = document.querySelector('#registrar');
+
+        boton.addEventListener('click', (e) => {
+            const nombre = document.querySelector('#nombre').value;
+            const texto = document.querySelector('#texto').value;
+            const bodyString = '';
+            if (nombre === '' || texto === '') return false;
+            fetch('/nuevo', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ nombre: nombre, texto: texto })
+            })
+                .then(res => { return res.text() })
+                .then(data => {
+                    alert(data);
+                    //descomentar cuando se implemente codigo para listar
+                    //listar();
+                });
+        })
+    </script>
+</body>
+
+</html>
