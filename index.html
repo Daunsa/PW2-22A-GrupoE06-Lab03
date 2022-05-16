@@ -23,7 +23,7 @@
         response => response.json()
     ).them(
         data => { //Reepuestas del serivdor
-            document.querySelector('# ').innerHTML = data.text;
+            document.querySelector('#mostrarhtml').innerHTML = data.text;
            
         }
     )
@@ -32,7 +32,10 @@
 </head>
 
 <body>
-  <p>Esta página web es una página HTML válida.</p>
+
+ <div id="mostrarhtml">   
+
+ </div>
 </body>
 </html>
 
