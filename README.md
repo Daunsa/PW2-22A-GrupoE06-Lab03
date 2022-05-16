@@ -99,7 +99,8 @@ Su aplicación debe ser de página única, es decir que sólo habrá un archivo 
 - En el Ejemplo "Hola Mundo" con NodeJS. ¿Qué pasó con la línea: "Content type ….."? <br>
 En la linea "Content type ….." se indica con que formato se va a responder como por ejemplo texto plano o formato HTML.
 #
-- En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?
+- En los ejercicios. ¿En qué lugar debería estar el archivo poema.txt?<br>
+Deberia estar en la carpeta priv
 #
 - ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
 #
