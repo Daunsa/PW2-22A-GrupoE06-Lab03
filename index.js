@@ -2,6 +2,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
