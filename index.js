@@ -30,14 +30,21 @@ app.post('/nuevo', (request, response) => {
 
     response.setHeader('Content-type', 'html/plain');
     response.send('Datos guardados con éxito');
-    app.post('/', (request, response) => {
-        console.log(request.body)
-        let markDownText = request.body.text
-        console.log(markDownText)
-        let htmlText = md.render(markDownText)
-        response.setHeader('Content-Type', 'application/json')
-        response.end(JSON.stringify({
-            text: htmlText
-        }))
-    })
+
 });
+app.post('/leyendoArchivo', (request, response) => {
+    let nombreArchivo = request.body.title;
+    fs.readFile(path.resolve(__dirname, 'priv/'+ nombreArchivo), 'utf8', (err, file) =>{
+        if (err){
+        console.log('Algo salio mal');
+        console.log(err);
+        return;
+        }
+        response.setHeader("Content.-Type","application/json");
+        response.end(
+        JSON.stringify({
+            text: md.render(file),
+        })
+        );
+    });
+})
