@@ -30,4 +30,14 @@ app.post('/nuevo', (request, response) => {
 
     response.setHeader('Content-type', 'html/plain');
     response.send('Datos guardados con éxito');
+    app.post('/', (request, response) => {
+        console.log(request.body)
+        let markDownText = request.body.text
+        console.log(markDownText)
+        let htmlText = md.render(markDownText)
+        response.setHeader('Content-Type', 'application/json')
+        response.end(JSON.stringify({
+            text: htmlText
+        }))
+    })
 });
