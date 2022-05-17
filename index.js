@@ -21,7 +21,7 @@ app.post('/nuevo', (request, response) => {
 
     var fs = require('fs');
 
-    fs.appendFile(nombre + '.md', texto, function (err) {
+    fs.appendFile(__dirname + "/public/" + nombre + '.md', texto, function (err) {
         if (err) throw err;
         console.log('Saved!');
     });
