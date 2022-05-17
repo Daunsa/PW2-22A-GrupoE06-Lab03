@@ -103,7 +103,7 @@ En la linea "Content type ….." se indica con que formato se va a responder com
 Deberia estar en otro directorio como en la carpeta priv que se creo previamente.
 #
 - ¿Entiende la expresión regular en el código y se da cuenta de para qué es útil?
-Las expresiones regulares nos permitieron coincidir combinaciones de caracteres en cadenas, en el ejercicio realizado nos permitió reemplazar \n por un ***<br>***.
+Las expresiones regulares nos permitieron coincidir combinaciones de caracteres en cadenas, en el ejercicio realizado nos permitió reemplazar \n por una etiqueta de salto de linea de html.
 #
 - Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?
 #
