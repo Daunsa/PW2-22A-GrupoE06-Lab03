@@ -2,6 +2,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
+const MarkdownIt = require('markdown-it'),
+    md = new MarkdownIt();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
@@ -28,4 +30,21 @@ app.post('/nuevo', (request, response) => {
 
     response.setHeader('Content-type', 'html/plain');
     response.send('Datos guardados con éxito');
+
 });
+app.post('/leyendoArchivo', (request, response) => {
+    let nombreArchivo = request.body.title;
+    fs.readFile(path.resolve(__dirname, 'priv/'+ nombreArchivo), 'utf8', (err, file) =>{
+        if (err){
+        console.log('Algo salio mal');
+        console.log(err);
+        return;
+        }
+        response.setHeader("Content.-Type","application/json");
+        response.end(
+        JSON.stringify({
+            text: md.render(file),
+        })
+        );
+    });
+})

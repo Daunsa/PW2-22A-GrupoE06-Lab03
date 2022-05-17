@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <script> 
+    function leyendoArchivo(file) {
+    let fileName = file;
+     
+    const url = 'http://localhost:3000/leyendoArchivo';
+    const data = {
+        title: fileName
+    }
+    const request = {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data),
+    }
+    http = fetch(url,request)
+    http.them(
+        response => response.json()
+    ).them(
+        data => { //Reepuestas del serivdor
+            document.querySelector('#mostrarhtml').innerHTML = data.text;
+           
+        }
+    )
+}   
+</script>
+</head>
+
+<body>
+
+ <div style="padding: 15px 50px 15px 50px;" id="mostrarhtml">   
+
+ </div>
+</body>
+</html>
+
