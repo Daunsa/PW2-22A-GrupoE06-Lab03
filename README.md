@@ -109,6 +109,7 @@ Deberia estar en otro directorio como en la carpeta priv que se creo previamente
 ### III.	CONCLUSIONES
 #
 -El entorno Node.js nos permite ejecutar código de JavaScript fuera del navegador y permite crear herramientas del lado del servidor.
+-Este laboratorio nos permitió recordar conceptos de html y css llevados en Pweb1.
 #
 <div align="center"><h2>  RETROALIMENTACIÓN GENERAL </h2></div> <br>
 
