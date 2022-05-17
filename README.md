@@ -106,6 +106,7 @@ Deberia estar en otro directorio como en la carpeta priv que se creo previamente
 Las expresiones regulares nos permitieron coincidir combinaciones de caracteres en cadenas, en el ejercicio realizado nos permitió reemplazar \n por una etiqueta de salto de linea de html.
 #
 - Note que la respuesta del servidor está en formato JSON, ¿Habrá alguna forma de verla directamente?<br>
+Realmente si, es un poco simple y obvio a la vez, ya que para esto solo se necesita consultar el url con los parametros correctos para que se nos pueda enviar la respuesta correspondiente.
 #
 ### III.	CONCLUSIONES
 #
