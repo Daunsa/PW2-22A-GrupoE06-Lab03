@@ -108,6 +108,8 @@ Deberia estar en otro directorio como en la carpeta priv que se creo previamente
 #
 ### III.	CONCLUSIONES
 #
+-El entorno Node.js nos permite ejecutar código de JavaScript fuera del navegador y permite crear herramientas del lado del servidor.
+#
 <div align="center"><h2>  RETROALIMENTACIÓN GENERAL </h2></div> <br>
 
 <div align="center"><h2> REFERENCIAS Y BIBLIOGRAFÍAL </h2></div> <br>
